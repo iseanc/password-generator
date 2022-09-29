@@ -1,0 +1,29 @@
+- PRESS a button (GENERATE PASSWORD)
+- PROMPT: Enter a Password Length (between 8 and 128 characters)
+    -- VERIFY number is in range
+        -- If blank, then use 8 characters
+    <- STORE answer
+- PROMPT: Use Lower Case?
+    -- VERIFY user selected or cancelled
+    <- STORE answer
+- PROMPT: Use Upper Case?
+    -- VERIFY user selected or cancelled
+    <- STORE answer
+- PROMPT: Use Numbers?
+    -- VERIFY user selected or cancel
+    <- STORE answer
+- PROMPT: Use Special Characters?
+    -- VERIFY user selected or cancel
+    <- STORE answer
+
+DEFINE: 
+- list of letters
+- list of uppercase letters
+-??  list of numbers ??
+   ** Just use Math.Random/Floor to get value 0-9
+- list Special characters
+
+LOGIC LOOP:
+- While counter is <= PASSWORD LENGTH
+- Generate AT LEAST 1 char of each type user selects
+- Randomly call functions to get random upper, lower, number, and special (AS selected by user)
