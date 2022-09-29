@@ -1,4 +1,5 @@
 - PRESS a button (GENERATE PASSWORD)
+    launh prompt
 - PROMPT: Enter a Password Length (between 8 and 128 characters)
     -- VERIFY number is in range
         -- If blank, then use 8 characters
